@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:020617,50:0f172a,100:083344&section=header&text=Software%20%C2%B7%20AI%20%C2%B7%20Cloud&fontSize=40&fontColor=22d3ee&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Engineering%20%C2%B7%20Enterprise%20SaaS%20%C2%B7%20APIs&descAlignY=58&descSize=15&descColor=94a3b8" alt="Software fields banner" width="100%" />
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&h=360&q=80" alt="Software engineering workspace" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/software-banner.svg" alt="Animated software systems banner" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0F172A&section=header&text=Full%20Stack%20%C2%B7%20AI%20%C2%B7%20Cloud&fontSize=42&fontColor=22d3ee&animation=fadeIn&fontAlignY=38&desc=Enterprise%20SaaS%20%C2%B7%20APIs%20%C2%B7%20Cloud-Native%20Systems&descAlignY=58&descSize=15&descColor=94a3b8" alt="Animated software fields banner" width="100%" />
 </p>
 
 <br/>
