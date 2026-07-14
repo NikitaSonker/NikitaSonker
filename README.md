@@ -1,14 +1,4 @@
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&h=360&q=80" alt="Software engineering workspace" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0F172A&section=header&text=Full%20Stack%20%C2%B7%20AI%20%C2%B7%20Cloud&fontSize=42&fontColor=22d3ee&animation=fadeIn&fontAlignY=38&desc=Enterprise%20SaaS%20%C2%B7%20APIs%20%C2%B7%20Cloud-Native%20Systems&descAlignY=58&descSize=15&descColor=94a3b8" alt="Animated software fields banner" width="100%" />
-</p>
-
-<br/>
-
-<p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=28&duration=3500&pause=1200&color=22D3EE&center=true&vCenter=true&width=720&height=60&lines=Nikita+Sonker;Software+Developer+(Full+Stack);Enterprise+SaaS+%C2%B7+AI+%C2%B7+Cloud" alt="Nikita Sonker" />
 </p>
 
