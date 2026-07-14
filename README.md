@@ -1,4 +1,14 @@
 <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:020617,50:0f172a,100:083344&section=header&text=Software%20%C2%B7%20AI%20%C2%B7%20Cloud&fontSize=40&fontColor=22d3ee&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Engineering%20%C2%B7%20Enterprise%20SaaS%20%C2%B7%20APIs&descAlignY=58&descSize=15&descColor=94a3b8" alt="Software fields banner" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/software-banner.svg" alt="Animated software systems banner" width="100%" />
+</p>
+
+<br/>
+
+<p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=28&duration=3500&pause=1200&color=22D3EE&center=true&vCenter=true&width=720&height=60&lines=Nikita+Sonker;Software+Developer+(Full+Stack);Enterprise+SaaS+%C2%B7+AI+%C2%B7+Cloud" alt="Nikita Sonker" />
 </p>
 
