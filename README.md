@@ -479,804 +479,658 @@ Systems are designed as **composed layers with explicit boundaries** — not as 
   Selected production and staging builds across commerce, education, operations, AI, and industry platforms.
 </p>
 
----
+<br/>
 
-### Roastory
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<a href="https://abhi-coffee-roasters.vercel.app"><h3>Roastory</h3></a>
 
 <img src="https://img.shields.io/badge/COMMERCE-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Commerce"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/FULL%20STACK-0f172a?style=flat-square&labelColor=111827" alt="Full Stack"/>
 
-**Specialty coffee commerce platform** for roasting brands that need a premium storefront without sacrificing operational control.
+<br/><br/>
 
-#### Problem
+<strong>Specialty coffee commerce platform</strong> for roasting brands that need a premium storefront without sacrificing operational control.
 
-Specialty roasters often outgrow template storefronts. Inventory, roasting schedules, product storytelling, and checkout need to coexist in one system that feels premium to customers and reliable to operators.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Template storefronts break down when inventory, roasting story, and checkout must coexist in one premium system.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Production commerce experience with curated catalog, responsive checkout, and backend ready for real traffic.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Node.js</code> · <code>PostgreSQL</code></td></tr>
+</table>
 
-A production-ready commerce experience with curated product presentation, responsive purchasing flows, and a backend capable of supporting catalog and order operations at real traffic.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Storefront (Next / React)
-        ↓
-Commerce API Layer
-        ↓
-Catalog · Cart · Checkout Services
-        ↓
-PostgreSQL + Cache
-        ↓
-CDN / Cloud Hosting
+Storefront → Commerce API → Catalog/Cart/Checkout → PostgreSQL + Cache → CDN
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Catalog | Structured product presentation with roast profiles and merchandising surfaces |
-| Checkout | Conversion-focused purchase flow with responsive behavior across devices |
-| Operations | Admin-friendly patterns for catalog and order continuity |
-| Performance | Edge-friendly delivery with lean client payloads |
+| Catalog | Roast profiles and merchandising surfaces |
+| Checkout | Conversion-focused, responsive purchase flow |
+| Operations | Admin-friendly catalog and order continuity |
+| Performance | Edge-friendly delivery with lean payloads |
 
-#### Tech stack
-
-`Next.js` · `React` · `TypeScript` · `Node.js` · `PostgreSQL` · `Cloud`
-
-<p>
-  <a href="https://abhi-coffee-roasters.vercel.app">
-    <img src="https://img.shields.io/badge/Live%20Demo-Roastory-0f172a?style=for-the-badge&logo=vercel&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Premium brand narrative without sacrificing engineering clarity.
-- Commerce flows designed for mobile-first buyers and desktop operators.
-- Architecture that can extend into subscriptions, wholesale, or loyalty without a rewrite.
+- Premium brand narrative without sacrificing engineering clarity
+- Mobile-first buyers + desktop operator workflows
+- Extensible toward subscriptions, wholesale, or loyalty
 
 </details>
 
----
+<br/>
 
-### Bahja
+<a href="https://abhi-coffee-roasters.vercel.app"><img src="https://img.shields.io/badge/Live%20Demo-Roastory-0f172a?style=for-the-badge&logo=vercel&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+    <td width="50%" valign="top">
+
+<a href="https://staging.bahja.co"><h3>Bahja</h3></a>
 
 <img src="https://img.shields.io/badge/ENTERPRISE-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Enterprise"/>
 <img src="https://img.shields.io/badge/STAGING-111827?style=flat-square&labelColor=0f172a&color=94a3b8" alt="Staging"/>
-<img src="https://img.shields.io/badge/PLATFORM-0f172a?style=flat-square&labelColor=111827" alt="Platform"/>
 
-**Enterprise platform build** oriented around multi-module delivery, operational workflows, and staging-validated releases.
+<br/><br/>
 
-#### Problem
+<strong>Enterprise platform build</strong> oriented around multi-module delivery, operational workflows, and staging-validated releases.
 
-Enterprise products fail when modules drift — inconsistent UI, duplicated logic, and fragile integrations between operational screens and services.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Enterprise modules drift — inconsistent UI, duplicated logic, and fragile service integrations.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Staging-hardened platform with shared UI patterns, REST contracts, and coherent environment config.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Angular</code> · <code>TypeScript</code> · <code>Django/Node</code> · <code>PostgreSQL</code> · <code>Redis</code></td></tr>
+</table>
 
-A staging-hardened platform where shared UI patterns, REST contracts, and environment configuration keep feature delivery coherent across the product surface.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Angular / React Clients
-        ↓
-API Gateway / Auth Boundary
-        ↓
-Domain Services
-        ↓
-PostgreSQL · Redis
-        ↓
-Staging → Production Pipeline
+Clients → API Gateway/Auth → Domain Services → PostgreSQL · Redis → Staging → Prod
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Modular UI | Shared components and layout systems across product areas |
-| Service contracts | Stable REST surfaces between clients and backend domains |
-| Staging discipline | Release validation before customer-facing promotion |
-| Scalability | Service boundaries that support additional modules without collapse |
+| Modular UI | Shared components across product areas |
+| Contracts | Stable REST surfaces between clients and domains |
+| Staging | Release validation before customer promotion |
+| Scale | Service boundaries for additional modules |
 
-#### Tech stack
-
-`Angular` · `TypeScript` · `Django / Node` · `PostgreSQL` · `Redis` · `Docker`
-
-<p>
-  <a href="https://staging.bahja.co">
-    <img src="https://img.shields.io/badge/Live%20Demo-Bahja%20Staging-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Enterprise staging workflows that mirror production constraints.
-- Emphasis on reusable UI and consistent interaction language.
-- Backend integrations designed for long-lived operational data.
+- Staging workflows that mirror production constraints
+- Reusable UI and consistent interaction language
+- Backend integrations for long-lived operational data
 
 </details>
 
----
+<br/>
 
-### Academun
+<a href="https://staging.bahja.co"><img src="https://img.shields.io/badge/Live%20Demo-Bahja%20Staging-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+  </tr>
+</table>
+
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<a href="https://academun.com"><h3>Academun</h3></a>
 
 <img src="https://img.shields.io/badge/EDTECH-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="EdTech"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/SAAS-0f172a?style=flat-square&labelColor=111827" alt="SaaS"/>
 
-**Education platform** connecting learning experiences, content delivery, and academic workflows into a coherent product.
+<br/><br/>
 
-#### Problem
+<strong>Education platform</strong> connecting learning experiences, content delivery, and academic workflows into one coherent product.
 
-EdTech products often become fragmented portals — content in one place, enrollment in another, and progress tracking bolted on later with poor coherence.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>EdTech becomes fragmented portals — content, enrollment, and progress living in disconnected tools.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Unified learner/operator experience with clear hierarchy and a service layer that grows with curriculum.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>React</code> · <code>Next.js</code> · <code>TypeScript</code> · <code>Node.js</code> · <code>PostgreSQL</code></td></tr>
+</table>
 
-A unified application experience for learners and operators, with clear information hierarchy, responsive interfaces, and a service layer that can grow with curriculum complexity.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Learner / Admin Web
-        ↓
-Application API
-        ↓
-Content · Enrollment · Progress Services
-        ↓
-PostgreSQL
-        ↓
-Cloud Hosting + CDN Assets
+Learner/Admin Web → Application API → Content/Enrollment/Progress → PostgreSQL → CDN
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Learning surfaces | Readable, structured interfaces for courses and academic flows |
-| Operator tooling | Admin paths for content and enrollment management |
-| Data model | Relational persistence for academic entities and progress |
-| Reach | Responsive layouts for learners on varied devices |
+| Learning | Structured interfaces for courses and flows |
+| Operators | Admin paths for content and enrollment |
+| Data | Relational model for academic entities |
+| Reach | Responsive layouts across devices |
 
-#### Tech stack
-
-`React` · `Next.js` · `TypeScript` · `Node.js` · `PostgreSQL` · `Cloud`
-
-<p>
-  <a href="https://academun.com">
-    <img src="https://img.shields.io/badge/Live%20Demo-Academun-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Product structure that prioritizes clarity over feature sprawl.
-- Architecture ready for content scaling and role-separated access.
-- Performance-conscious frontend for content-heavy pages.
+- Clarity over feature sprawl
+- Ready for role-separated access at scale
+- Performance-conscious content-heavy pages
 
 </details>
 
----
+<br/>
 
-### Executive Advertising
+<a href="https://academun.com"><img src="https://img.shields.io/badge/Live%20Demo-Academun-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+    <td width="50%" valign="top">
+
+<a href="https://executiveadvertising.com"><h3>Executive Advertising</h3></a>
 
 <img src="https://img.shields.io/badge/MARKETING-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Marketing"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/BRAND-0f172a?style=flat-square&labelColor=111827" alt="Brand"/>
 
-**Corporate advertising and brand platform** presenting services, campaigns, and firm identity with enterprise-grade polish.
+<br/><br/>
 
-#### Problem
+<strong>Corporate advertising and brand platform</strong> presenting services, campaigns, and firm identity with enterprise polish.
 
-Agency and advertising firms need digital presence that signals trust. Template marketing sites often undercut the very professionalism the firm sells.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Agency sites undercut trust when they look like generic templates instead of premium brand systems.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>High-clarity marketing system with disciplined typography, service storytelling, and safe content updates.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Tailwind/SCSS</code> · <code>Cloud</code></td></tr>
+</table>
 
-A high-clarity marketing system with disciplined typography, structured service storytelling, and a deployment path that keeps content updates safe and fast.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Marketing Frontend
-        ↓
-Content / CMS Integration
-        ↓
-Static + Dynamic Delivery
-        ↓
-CDN Edge Network
+Marketing Frontend → Content/CMS → Static + Dynamic Delivery → CDN Edge
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Brand narrative | Premium presentation of capabilities and case positioning |
-| Content structure | Sections organized for scanning by enterprise buyers |
-| Performance | Fast first paint and stable layout across breakpoints |
-| SEO surface | Indexable structure for acquisition and discovery |
+| Brand | Premium presentation of capabilities |
+| Content | Scannable structure for enterprise buyers |
+| Performance | Fast first paint across breakpoints |
+| SEO | Indexable acquisition surface |
 
-#### Tech stack
-
-`Next.js` · `React` · `TypeScript` · `Tailwind / SCSS` · `Vercel / Cloud`
-
-<p>
-  <a href="https://executiveadvertising.com">
-    <img src="https://img.shields.io/badge/Live%20Demo-Executive%20Advertising-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Visual hierarchy tuned for decision-makers, not scroll bait.
-- Clean separation of presentation and content update paths.
-- Production deployment with edge delivery characteristics.
+- Hierarchy tuned for decision-makers
+- Clean presentation vs content update paths
+- Edge delivery in production
 
 </details>
 
----
+<br/>
 
-### WIoT360
+<a href="https://executiveadvertising.com"><img src="https://img.shields.io/badge/Live%20Demo-Executive%20Advertising-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+  </tr>
+</table>
+
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<a href="http://wiot360.com"><h3>WIoT360</h3></a>
 
 <img src="https://img.shields.io/badge/IoT-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="IoT"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/INDUSTRY-0f172a?style=flat-square&labelColor=111827" alt="Industry"/>
 
-**IoT operations platform** for monitoring, device context, and industrial/data visibility across connected environments.
+<br/><br/>
 
-#### Problem
+<strong>IoT operations platform</strong> for monitoring, device context, and industrial data visibility across connected environments.
 
-IoT products collapse when device data, dashboards, and operational actions live in unrelated tools with no shared source of truth.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Device data, dashboards, and actions live in unrelated tools with no shared source of truth.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Unified web platform surfacing operational insight through dashboards and service-backed data flows.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>React/Angular</code> · <code>Node/Python</code> · <code>PostgreSQL</code> · <code>Redis</code> · <code>AWS</code></td></tr>
+</table>
 
-A unified web platform that surfaces device and operational insight through structured dashboards and service-backed data flows.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Operations Dashboard
-        ↓
-API Gateway
-        ↓
-Device / Telemetry Services
-        ↓
-Time-series Capable Store + Cache
-        ↓
-Cloud Infrastructure
+Dashboard → API Gateway → Device/Telemetry Services → Store + Cache → Cloud
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
 | Visibility | Operational dashboards for connected environments |
-| Data path | API-mediated access to device and telemetry context |
-| Reliability | Architecture oriented around continuous monitoring use cases |
-| Extensibility | Service seams for additional device classes and alerts |
+| Data path | API-mediated device and telemetry access |
+| Reliability | Continuous monitoring posture |
+| Extensibility | Seams for device classes and alerts |
 
-#### Tech stack
-
-`React / Angular` · `Node / Python` · `PostgreSQL` · `Redis` · `AWS` · `Docker`
-
-<p>
-  <a href="http://wiot360.com">
-    <img src="https://img.shields.io/badge/Live%20Demo-WIoT360-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Built for operational clarity under dense data conditions.
-- Backend integrations that tolerate real-world device variability.
-- Cloud-ready deployment model for continuous availability.
+- Clarity under dense operational data
+- Integrations that tolerate device variability
+- Cloud-ready continuous availability model
 
 </details>
 
----
+<br/>
 
-### EINO World
+<a href="http://wiot360.com"><img src="https://img.shields.io/badge/Live%20Demo-WIoT360-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+    <td width="50%" valign="top">
+
+<a href="https://eino.world"><h3>EINO World</h3></a>
 
 <img src="https://img.shields.io/badge/PRODUCT-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Product"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/WEB-0f172a?style=flat-square&labelColor=111827" alt="Web"/>
 
-**Product world platform** presenting a digital ecosystem experience with curated content, product storytelling, and conversion paths.
+<br/><br/>
 
-#### Problem
+<strong>Product world platform</strong> presenting a digital ecosystem with curated content, storytelling, and conversion paths.
 
-Product ecosystems need a home that feels intentional — not a brochure site and not an underbuilt app. Users need orientation, narrative, and clear next steps.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Ecosystem products need orientation and narrative — not a thin brochure or an underbuilt app.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Crafted web experience balancing editorial structure with application-grade routing and performance.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Node.js</code> · <code>Cloud</code></td></tr>
+</table>
 
-A crafted web product experience balancing editorial structure with application-grade routing, performance, and responsive design.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Product Web Experience
-        ↓
-Application Layer
-        ↓
-Content + Feature Services
-        ↓
-Database / CDN Assets
+Product Web → Application Layer → Content + Feature Services → DB / CDN
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Experience | Cohesive product narrative across pages and modules |
-| Interaction | Application-grade navigation without SPA fragility |
-| Delivery | Production hosting with asset and route optimization |
-| Growth | Structures that support campaigns and feature expansion |
+| Experience | Cohesive narrative across modules |
+| Interaction | Application-grade navigation |
+| Delivery | Asset and route optimization |
+| Growth | Structures for campaigns and expansion |
 
-#### Tech stack
-
-`Next.js` · `React` · `TypeScript` · `Node.js` · `Cloud`
-
-<p>
-  <a href="https://eino.world">
-    <img src="https://img.shields.io/badge/Live%20Demo-EINO%20World-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Product storytelling with engineering discipline underneath.
-- Responsive layout system suited for high-traffic marketing + product hybrids.
-- Clean separation between content surfaces and interactive modules.
+- Storytelling with engineering discipline
+- Hybrid marketing + product layout system
+- Clear content vs interactive module separation
 
 </details>
 
----
+<br/>
 
-### MeetHive
+<a href="https://eino.world"><img src="https://img.shields.io/badge/Live%20Demo-EINO%20World-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+  </tr>
+</table>
+
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<a href="https://meet-hive-fe.vercel.app"><h3>MeetHive</h3></a>
 
 <img src="https://img.shields.io/badge/PRODUCTIVITY-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Productivity"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/SAAS-0f172a?style=flat-square&labelColor=111827" alt="SaaS"/>
 
-**Meeting and collaboration product** focused on scheduling clarity, session context, and team coordination workflows.
+<br/><br/>
 
-#### Problem
+<strong>Meeting and collaboration product</strong> focused on scheduling clarity, session context, and team coordination.
 
-Meeting tools fail when context is scattered — invite links here, notes there, and no coherent product thread connecting participants to outcomes.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Meeting context scatters — invites, notes, and outcomes never connect in one product thread.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Focused SaaS frontend with meeting flows, typed architecture, and a scalable ship pipeline.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>React</code> · <code>TypeScript</code> · <code>Node.js</code> · <code>PostgreSQL</code> · <code>Vercel</code></td></tr>
+</table>
 
-A focused SaaS frontend experience with meeting-oriented flows, modern TypeScript architecture, and deployment on a scalable hosting pipeline.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-MeetHive Frontend
-        ↓
-Auth + Application API
-        ↓
-Meeting / Session Services
-        ↓
-PostgreSQL · Redis
-        ↓
-Vercel / Cloud Runtime
+Frontend → Auth + API → Meeting/Session Services → PostgreSQL · Redis → Cloud
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Session UX | Clear flows for creating and joining collaboration contexts |
-| Client architecture | Typed frontend with maintainable module boundaries |
-| Backend coupling | API-driven state rather than accidental local-only logic |
-| Ship path | Continuous deployment suitable for SaaS iteration speed |
+| Session UX | Create and join collaboration contexts |
+| Client | Typed modules with clean boundaries |
+| Backend | API-driven state, not local-only logic |
+| Ship path | Continuous deployment for SaaS speed |
 
-#### Tech stack
-
-`React` · `TypeScript` · `Node.js` · `PostgreSQL` · `Vercel`
-
-<p>
-  <a href="https://meet-hive-fe.vercel.app">
-    <img src="https://img.shields.io/badge/Live%20Demo-MeetHive-0f172a?style=for-the-badge&logo=vercel&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Product UX oriented around real collaboration friction.
-- Frontend/backend separation that supports fast feature cycles.
-- Production staging on modern cloud frontend infrastructure.
+- UX oriented around real collaboration friction
+- Frontend/backend separation for fast cycles
+- Production staging on modern cloud infra
 
 </details>
 
----
+<br/>
 
-### AI Interview Platform
+<a href="https://meet-hive-fe.vercel.app"><img src="https://img.shields.io/badge/Live%20Demo-MeetHive-0f172a?style=for-the-badge&logo=vercel&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+    <td width="50%" valign="top">
+
+<a href="https://interview-ai-fe-ten.vercel.app"><h3>AI Interview Platform</h3></a>
 
 <img src="https://img.shields.io/badge/AI-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="AI"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/HRTECH-0f172a?style=flat-square&labelColor=111827" alt="HRTech"/>
 
-**AI-assisted interview platform** for structured candidate evaluation, prompt-driven questioning, and scoring workflows.
+<br/><br/>
 
-#### Problem
+<strong>AI-assisted interview platform</strong> for structured candidate evaluation, prompt-driven questioning, and scoring.
 
-Interview processes become inconsistent when each interviewer improvises. Teams need structure without making the experience feel robotic or opaque.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Interviews become inconsistent when every interviewer improvises without shared structure.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Production AI interview flows — prompts, responses, and feedback as first-class product features.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>React</code> · <code>TypeScript</code> · <code>Node.js</code> · <code>OpenAI</code> · <code>Gemini</code></td></tr>
+</table>
 
-A production AI interview frontend wired to intelligent evaluation flows — prompts, responses, and feedback loops designed as first-class product features rather than demos.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Interview Frontend
-        ↓
-Orchestration API
-        ↓
-LLM Provider Layer (OpenAI / Gemini)
-        ↓
-Session Store + Evaluation Records
-        ↓
-Analytics / Review Surfaces
+Interview UI → Orchestration API → LLM Layer → Session Store → Review Surfaces
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Interview flow | Guided sessions with consistent evaluation structure |
-| Model orchestration | Provider abstraction for generation and scoring |
-| Session persistence | Durable records for review and auditability |
-| Operator UX | Interfaces for reviewing outcomes, not only running interviews |
+| Interview | Guided sessions with consistent evaluation |
+| Models | Provider abstraction for generation/scoring |
+| Persistence | Durable records for review and audit |
+| Operators | Review outcomes, not only run interviews |
 
-#### Tech stack
-
-`React` · `TypeScript` · `Node.js` · `OpenAI` · `Gemini` · `PostgreSQL`
-
-<p>
-  <a href="https://interview-ai-fe-ten.vercel.app">
-    <img src="https://img.shields.io/badge/Live%20Demo-AI%20Interview%20Platform-0f172a?style=for-the-badge&logo=vercel&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- AI treated as product infrastructure — not a novelty widget.
-- Session architecture suitable for hiring and training use cases.
-- Clear separation between UI interaction and model orchestration.
+- AI as product infrastructure, not a novelty
+- Session architecture for hiring and training
+- Clear UI vs model orchestration separation
 
 </details>
 
----
+<br/>
 
-### Neural Scrutiny Engine
+<a href="https://interview-ai-fe-ten.vercel.app"><img src="https://img.shields.io/badge/Live%20Demo-AI%20Interview-0f172a?style=for-the-badge&logo=vercel&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+  </tr>
+</table>
+
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<h3>Neural Scrutiny Engine</h3>
 
 <img src="https://img.shields.io/badge/AI-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="AI"/>
-<img src="https://img.shields.io/badge/SYSTEM-111827?style=flat-square&labelColor=0f172a&color=22d3ee" alt="System"/>
-<img src="https://img.shields.io/badge/RAG-0f172a?style=flat-square&labelColor=111827" alt="RAG"/>
+<img src="https://img.shields.io/badge/RAG-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="RAG"/>
 
-**Neural analysis and scrutiny engine** for document intelligence, ranking signals, and retrieval-augmented inspection workflows.
+<br/><br/>
 
-#### Problem
+<strong>Neural analysis engine</strong> for document intelligence, ranking signals, and retrieval-augmented inspection workflows.
 
-Teams drowning in documents need more than chat. They need scrutiny — retrieval, comparison, summarization, and evidence-linked outputs that hold up under review.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Teams drowning in documents need evidence-linked scrutiny — not unconstrained chat.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>RAG pipelines with embedding retrieval and generative analysis grounded in source material.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Python</code> · <code>FastAPI</code> · <code>OpenAI</code> · <code>BART</code> · <code>Vector Search</code></td></tr>
+</table>
 
-An AI system architecture combining **RAG pipelines**, embedding retrieval, and generative analysis so findings stay grounded in source material rather than unconstrained model drift.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Ingestion Pipeline
-        ↓
-Chunking · Embedding · Indexing
-        ↓
-Vector Search Layer
-        ↓
-Retriever → Reranker → Generator
-        ↓
-Scrutiny Reports / API Consumers
+Ingestion → Chunk/Embed/Index → Vector Search → Retrieve→Rerank→Generate → Reports
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Retrieval | Vector search over domain corpora with grounded context windows |
-| Analysis | Generative scrutiny with citation-oriented outputs |
-| Models | Compatible with OpenAI / Gemini orchestration patterns |
-| Integration | Exposable as API services for product UIs and internal tools |
+| Retrieval | Grounded context over domain corpora |
+| Analysis | Citation-oriented generative scrutiny |
+| Models | OpenAI / Gemini orchestration compatible |
+| Integration | Exposable APIs for product UIs |
 
-#### Tech stack
-
-`Python` · `FastAPI` · `OpenAI` · `BART` · `RAG` · `Vector Search` · `Redis`
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Retrieval-first design to reduce hallucination risk in high-stakes review.
-- Pipeline stages that can be observed, tuned, and swapped independently.
-- Suitable backbone for compliance, research, and diligence products.
+- Retrieval-first design reduces hallucination risk
+- Tunable pipeline stages
+- Backbone for compliance, research, diligence
 
 </details>
 
----
+</td>
+    <td width="50%" valign="top">
 
-### Voice Cloning Agent
+<h3>Voice Cloning Agent</h3>
 
 <img src="https://img.shields.io/badge/AI-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="AI"/>
 <img src="https://img.shields.io/badge/AUDIO-111827?style=flat-square&labelColor=0f172a&color=22d3ee" alt="Audio"/>
-<img src="https://img.shields.io/badge/AGENT-0f172a?style=flat-square&labelColor=111827" alt="Agent"/>
 
-**Voice cloning and speech agent system** for generative audio experiences, transcription loops, and agentic voice workflows.
+<br/><br/>
 
-#### Problem
+<strong>Voice cloning and speech agent</strong> for generative audio, transcription loops, and agentic voice workflows.
 
-Voice products require more than a single model call. Capture, transcription, generation, and playback must form a reliable pipeline with latency and quality tradeoffs managed explicitly.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Voice products need a full pipeline — capture, transcription, generation, playback — not one model call.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Agent orchestration combining Whisper-class transcription with synthesis for real application embeds.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Python</code> · <code>Whisper</code> · <code>OpenAI</code> · <code>FastAPI</code> · <code>Cloud Storage</code></td></tr>
+</table>
 
-An agent-oriented architecture that combines speech models (including Whisper-class transcription) with generation and orchestration so voice features can live inside real applications.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Client / Agent Interface
-        ↓
-Speech Orchestrator
-        ↓
-Whisper Transcription  ↔  Voice Synthesis
-        ↓
-Session Memory / Prompt State
-        ↓
-Downstream Product Actions
+Client → Speech Orchestrator → Whisper ↔ Synthesis → Session Memory → Actions
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Transcription | Speech-to-text pipelines for agent grounding |
-| Synthesis | Voice generation paths for cloning / response playback |
-| Agency | Orchestrated turns rather than one-shot audio demos |
-| Product fit | Embeddable in support, content, and accessibility workflows |
+| Transcription | Speech-to-text for agent grounding |
+| Synthesis | Cloning / response playback paths |
+| Agency | Orchestrated turns, not one-shot demos |
+| Product fit | Support, content, accessibility embeds |
 
-#### Tech stack
-
-`Python` · `Whisper` · `OpenAI` · `Node / FastAPI` · `Cloud Storage`
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- End-to-end audio loop designed as production software.
-- Explicit orchestrator layer between UI events and model calls.
-- Extensible toward multilingual and low-latency deployment modes.
+- End-to-end audio loop as production software
+- Explicit orchestrator between UI and models
+- Extensible to multilingual / low-latency modes
 
 </details>
 
----
+</td>
+  </tr>
+</table>
 
-### ChatRx
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<a href="https://chatrx.md"><h3>ChatRx</h3></a>
 
 <img src="https://img.shields.io/badge/HEALTHTECH-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="HealthTech"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/AI-0f172a?style=flat-square&labelColor=111827" alt="AI"/>
 
-**Conversational health-oriented platform** combining chat UX with structured information flows for user guidance and engagement.
+<br/><br/>
 
-#### Problem
+<strong>Conversational health platform</strong> combining chat UX with structured information flows for guidance and engagement.
 
-Health information products must balance conversational convenience with clarity, trust, and structured routing — unstructured chat alone is not enough.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Health products need conversational convenience plus clarity and trust — unstructured chat is not enough.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Chat-first experience with disciplined frontend and AI flows that keep users oriented professionally.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>React</code> · <code>TypeScript</code> · <code>Node.js</code> · <code>OpenAI</code> · <code>Cloud</code></td></tr>
+</table>
 
-A chat-first product experience with disciplined frontend architecture and AI-assisted flows that keep users oriented while preserving a professional medical-adjacent presence.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-ChatRx Web Client
-        ↓
-Conversation API
-        ↓
-LLM + Domain Prompt Layer
-        ↓
-Session Store
-        ↓
-Moderation / Safety Boundaries
+Chat Client → Conversation API → LLM + Prompt Layer → Session Store → Safety Bounds
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Chat UX | Conversational interface optimized for clarity and trust |
-| Guidance flows | Structured prompts and response patterns for domain topics |
-| Safety posture | Boundaries and presentation that respect sensitive domains |
-| Delivery | Production web deployment with responsive chat surfaces |
+| Chat UX | Conversational interface built for trust |
+| Guidance | Structured domain prompt patterns |
+| Safety | Presentation respect for sensitive domains |
+| Delivery | Responsive production chat surfaces |
 
-#### Tech stack
-
-`React` · `TypeScript` · `Node.js` · `OpenAI` · `Cloud`
-
-<p>
-  <a href="https://chatrx.md">
-    <img src="https://img.shields.io/badge/Live%20Demo-ChatRx-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Conversation design that feels intentional rather than generic chatbot kit.
-- Architecture that can incorporate retrieval and escalation paths.
-- Brand and UX language calibrated for sensitive domains.
+- Intentional conversation design, not chatbot kit
+- Room for retrieval and escalation paths
+- UX calibrated for sensitive domains
 
 </details>
 
----
+<br/>
 
-### Arcana Recovery
+<a href="https://chatrx.md"><img src="https://img.shields.io/badge/Live%20Demo-ChatRx-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+    <td width="50%" valign="top">
+
+<a href="https://arcanarecovery.com"><h3>Arcana Recovery</h3></a>
 
 <img src="https://img.shields.io/badge/WELLNESS-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Wellness"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/WEB-0f172a?style=flat-square&labelColor=111827" alt="Web"/>
 
-**Recovery and wellness platform** delivering program information, trust-building content, and clear paths into care experiences.
+<br/><br/>
 
-#### Problem
+<strong>Recovery and wellness platform</strong> delivering program information, trust-building content, and clear care paths.
 
-Recovery brands need digital presence that communicates seriousness and support — not salesy funnels that erode trust in a sensitive category.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Recovery brands lose trust when digital presence feels like aggressive sales funnels.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Refined web platform with calm information architecture and production-ready content ops.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>Next.js</code> · <code>React</code> · <code>TypeScript</code> · <code>Tailwind</code> · <code>Cloud</code></td></tr>
+</table>
 
-A refined web platform with careful information architecture, calm visual systems, and production hosting suited to continuous content and conversion updates.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Recovery Web Experience
-        ↓
-Content + Lead Capture Flows
-        ↓
-CMS / Application Services
-        ↓
-Analytics + CRM Integrations
-        ↓
-Cloud Delivery
+Recovery Web → Content + Lead Flows → CMS/Services → Analytics/CRM → Cloud
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Trust UX | Layout and copy hierarchy for sensitive visitor journeys |
-| Conversion | Clear CTAs without aggressive dark-pattern patterns |
-| Content ops | Structures that support ongoing program updates |
-| Performance | Fast loads for mobile users seeking help |
+| Trust UX | Hierarchy for sensitive visitor journeys |
+| Conversion | Clear CTAs without dark patterns |
+| Content ops | Structures for ongoing program updates |
+| Performance | Fast loads for high-intent mobile users |
 
-#### Tech stack
-
-`Next.js` · `React` · `TypeScript` · `Tailwind` · `Cloud`
-
-<p>
-  <a href="https://arcanarecovery.com">
-    <img src="https://img.shields.io/badge/Live%20Demo-Arcana%20Recovery-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Information design optimized for trust and comprehension.
-- Production-ready marketing + intake hybrid architecture.
-- Responsive performance for high-intent mobile traffic.
+- Information design for trust and comprehension
+- Marketing + intake hybrid architecture
+- Responsive for high-intent mobile traffic
 
 </details>
 
----
+<br/>
 
-### Zest2Live
+<a href="https://arcanarecovery.com"><img src="https://img.shields.io/badge/Live%20Demo-Arcana%20Recovery-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
+
+</td>
+  </tr>
+</table>
+
+<br/>
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+
+<a href="https://zest2live.com"><h3>Zest2Live</h3></a>
 
 <img src="https://img.shields.io/badge/LIFESTYLE-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="Lifestyle"/>
 <img src="https://img.shields.io/badge/LIVE-22d3ee?style=flat-square&labelColor=0f172a" alt="Live"/>
-<img src="https://img.shields.io/badge/PRODUCT-0f172a?style=flat-square&labelColor=111827" alt="Product"/>
 
-**Lifestyle and vitality platform** presenting programs, storytelling, and engagement paths in a modern product wrapper.
+<br/><br/>
 
-#### Problem
+<strong>Lifestyle and vitality platform</strong> presenting programs, storytelling, and engagement paths in a modern product wrapper.
 
-Lifestyle brands struggle when the website feels disconnected from the product promise — flashy visuals with weak structure, or strong content trapped in rigid templates.
+<br/><br/>
 
-#### Solution
+<table>
+  <tr><td><strong>Problem</strong></td><td>Lifestyle sites often feel flashy with weak structure, or strong content trapped in rigid templates.</td></tr>
+  <tr><td><strong>Solution</strong></td><td>Full web product balancing brand energy with engineered navigation, modules, and scalable deploys.</td></tr>
+  <tr><td><strong>Tech</strong></td><td><code>React</code> · <code>Next.js</code> · <code>TypeScript</code> · <code>SCSS/Tailwind</code> · <code>Cloud</code></td></tr>
+</table>
 
-A full web product experience that balances brand energy with engineered navigation, content modules, and scalable deployment practices.
-
-#### Architecture
+<details>
+<summary><strong>Architecture · Features · Highlights</strong></summary>
+<br/>
 
 ```text
-Zest2Live Frontend
-        ↓
-Application / Content Layer
-        ↓
-Feature Modules + Media Assets
-        ↓
-CDN + Cloud Hosting
+Zest2Live Frontend → Application/Content Layer → Feature Modules + Media → CDN
 ```
-
-#### Capability map
 
 | Capability | Detail |
 |:-----------|:-------|
-| Brand experience | Distinctive presentation without sacrificing usability |
-| Module structure | Sections that can expand into deeper product features |
-| Media delivery | Optimized asset strategy for imagery-heavy pages |
-| Analytics readiness | Conversion and engagement instrumentation hooks |
+| Brand | Distinctive presentation without usability loss |
+| Modules | Expandable toward deeper product features |
+| Media | Optimized strategy for imagery-heavy pages |
+| Analytics | Conversion and engagement instrumentation hooks |
 
-#### Tech stack
-
-`React` · `Next.js` · `TypeScript` · `SCSS / Tailwind` · `Cloud`
-
-<p>
-  <a href="https://zest2live.com">
-    <img src="https://img.shields.io/badge/Live%20Demo-Zest2Live-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/>
-  </a>
-</p>
-
-<details>
-<summary><strong>Highlights</strong></summary>
-<br/>
-
-- Lifestyle energy expressed through disciplined engineering.
-- Modular page composition for campaign and seasonal updates.
-- Production deployment posture suitable for continuous iteration.
+- Lifestyle energy with disciplined engineering
+- Modular composition for seasonal campaigns
+- Continuous iteration deployment posture
 
 </details>
 
 <br/>
 
-<details>
-<summary><strong>More builds & portfolio index</strong></summary>
-<br/>
+<a href="https://zest2live.com"><img src="https://img.shields.io/badge/Live%20Demo-Zest2Live-0f172a?style=for-the-badge&logo=googlechrome&logoColor=22d3ee&labelColor=111827" alt="Live Demo"/></a>
 
-| Project | Domain | Status | Link |
-|:--------|:-------|:-------|:-----|
-| Roastory | Commerce | Live | [Open](https://abhi-coffee-roasters.vercel.app) |
-| Bahja | Enterprise | Staging | [Open](https://staging.bahja.co) |
-| Academun | EdTech | Live | [Open](https://academun.com) |
-| Executive Advertising | Marketing | Live | [Open](https://executiveadvertising.com) |
-| WIoT360 | IoT | Live | [Open](http://wiot360.com) |
-| EINO World | Product | Live | [Open](https://eino.world) |
-| MeetHive | Productivity | Live | [Open](https://meet-hive-fe.vercel.app) |
-| AI Interview Platform | AI / HR | Live | [Open](https://interview-ai-fe-ten.vercel.app) |
-| Neural Scrutiny Engine | AI / RAG | System | — |
-| Voice Cloning Agent | AI / Audio | System | — |
-| ChatRx | HealthTech | Live | [Open](https://chatrx.md) |
-| Arcana Recovery | Wellness | Live | [Open](https://arcanarecovery.com) |
-| Zest2Live | Lifestyle | Live | [Open](https://zest2live.com) |
+</td>
+    <td width="50%" valign="top">
 
-</details>
+<h3>Portfolio Index</h3>
+
+<img src="https://img.shields.io/badge/ALL%20BUILDS-0f172a?style=flat-square&labelColor=111827&color=22d3ee" alt="All Builds"/>
+
+<br/><br/>
+
+Quick jump across every featured surface — live products, staging platforms, and AI systems.
+
+<br/><br/>
+
+| Project | Status |
+|:--------|:-------|
+| [Roastory](https://abhi-coffee-roasters.vercel.app) | Live |
+| [Bahja](https://staging.bahja.co) | Staging |
+| [Academun](https://academun.com) | Live |
+| [Executive Advertising](https://executiveadvertising.com) | Live |
+| [WIoT360](http://wiot360.com) | Live |
+| [EINO World](https://eino.world) | Live |
+| [MeetHive](https://meet-hive-fe.vercel.app) | Live |
+| [AI Interview](https://interview-ai-fe-ten.vercel.app) | Live |
+| [ChatRx](https://chatrx.md) | Live |
+| [Arcana Recovery](https://arcanarecovery.com) | Live |
+| [Zest2Live](https://zest2live.com) | Live |
+
+</td>
+  </tr>
+</table>
 
 <br/>
 
